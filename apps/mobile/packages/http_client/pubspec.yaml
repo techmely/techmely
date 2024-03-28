@@ -1,0 +1,15 @@
+name: http_client
+description: Dart package which manages http_client.
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+# Add regular dependencies here.
+dependencies:
+  http: ^1.2.1
+  logger:
+    path: ../logger
+
+dev_dependencies:
+  test: ^1.24.0
