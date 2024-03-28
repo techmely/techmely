@@ -7,5 +7,5 @@ message GetPreferencesRequest {
 }
 
 message GetPreferencesResponse {
-
+ string id = 1;
 }

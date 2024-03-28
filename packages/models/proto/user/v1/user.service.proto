@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package techmely.user.service.v1;
 
-import "user/user.model.v1.proto";
-import "user/user.event.v1.proto";
+import "user/v1/user.model.proto";
+import "user/v1/user.event.proto";
 
 service UserService {
   rpc Get(user.event.v1.GetUserRequest) returns (user.event.v1.GetUserResponse) {}

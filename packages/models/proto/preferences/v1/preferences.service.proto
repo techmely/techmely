@@ -2,7 +2,8 @@ syntax = "proto3";
 
 package techmely.preferences.service.v1;
 
-import "preferences/preferences.event.v1.proto";
+import "preferences/v1/preferences.event.proto";
+import "preferences/v1/preferences.model.proto";
 
 service PreferencesService {
   rpc Get(preferences.event.v1.GetPreferencesRequest) returns (preferences.event.v1.GetPreferencesResponse) {}
