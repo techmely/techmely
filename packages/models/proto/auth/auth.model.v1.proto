@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package techmely.auth.model.v1;
+
+message Auth {
+  int64 id = 1;
+}

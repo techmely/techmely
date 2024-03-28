@@ -12,7 +12,9 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --splitting --sourcemap --clean --dts --format esm --treeshake",
     "clean": "rimraf dist",
@@ -29,9 +31,9 @@
     "zod": "3.22.4"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240314.0",
+    "@cloudflare/workers-types": "4.20240320.1",
     "@techmely/types": "1.6.5",
     "tsup": "8.0.2",
-    "wrangler": "3.34.2"
+    "wrangler": "3.37.0"
   }
 }

@@ -1,0 +1,8 @@
+name: logger
+description: Dart package which manages logging.
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:

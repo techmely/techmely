@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package techmely.preferences.event.v1;
+
+message GetPreferencesRequest {
+  string id = 1;
+}
+
+message GetPreferencesResponse {
+
+}

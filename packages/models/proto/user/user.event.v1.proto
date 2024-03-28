@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package techmely.user.event.v1;
+
+message GetUserRequest {
+    string id = 1;
+}
+
+message GetUserResponse {
+
+}
+
+message UpdateUserRequest {
+    string id = 1;
+}
+
+message UpdateUserResponse {
+
+}
+
+message UserChangePasswordRequest {
+    string email = 1;
+}
+
+message UserChangePasswordResponse {
+    string email = 1;
+}
+
+message ChangeUserEmailRequest {
+    string email = 1;
+}
+
+message ChangeUserEmailResponse {
+    string email = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package techmely.preferences.service.v1;
+
+import "preferences/preferences.event.v1.proto";
+
+service PreferencesService {
+  rpc Get(preferences.event.v1.GetPreferencesRequest) returns (preferences.event.v1.GetPreferencesResponse) {}
+}

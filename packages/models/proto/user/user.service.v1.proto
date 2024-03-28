@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package techmely.user.service.v1;
+
+import "user/user.model.v1.proto";
+import "user/user.event.v1.proto";
+
+service UserService {
+  rpc Get(user.event.v1.GetUserRequest) returns (user.event.v1.GetUserResponse) {}
+  rpc Put(user.event.v1.UpdateUserRequest) returns (user.event.v1.UpdateUserResponse) {}
+  rpc ChangeEmail(user.event.v1.ChangeUserEmailRequest) returns (user.event.v1.ChangeUserEmailResponse) {}
+}

@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package techmely.user.model.v1;
+
+enum UserRoles {
+    SUPER_ADMIN = 0;
+    MODERATOR = 1;
+    ADMIN = 2;
+    MEMBER = 3;
+    GUEST = 4;
+}
+
+enum UserStatus {
+    VERIFIED = 0;
+    BLACKLIST = 1;
+    INACTIVE = 2;
+    ACTIVE = 3;
+    CLOSED = 4;
+}
+
+message UserProvider {
+    string githubId = 1;
+    string googleId = 2;
+    string facebookId = 3;
+    string appleId = 4;
+}
+
+message UserMetadata {
+    string openPlatform = 1;
+    string utmCampaign = 2;
+    string utmMedium = 3;
+    string utmSource = 4;
+}
+
+message User {
+    string id = 1;
+    string email = 2;
+    string unverified_email = 3;
+    bool is_email_verified = 4;
+    string nickname = 5;
+    string mobile = 6;
+    string birthday = 7;
+    string name = 8;
+    string avatar_url = 9;
+    string locale = 10;
+    string region = 11;
+    string country_code = 12;
+    string gender = 13;
+    string salt = 14;
+    int64 last_login = 15;
+    bool is_beta_user = 16;
+    UserMetadata metadata = 17;
+    UserProvider provider = 18;
+}
